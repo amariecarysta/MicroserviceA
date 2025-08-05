@@ -1,3 +1,4 @@
+# Communication Contract
 Microservice A processes requests via text files in the working directory. It watches for a file named request.txt and, whenever it detects a new or updated file, it:
 
 Reads the file contents (plain UTF-8 text)
