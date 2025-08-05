@@ -13,20 +13,31 @@ Your code must create or overwrite request.txt in the same directory where the s
 
 Python example
 text_to_count = "Whatever words you choose to type.."
+
+
 with open("request.txt", "w", encoding="utf-8") as req:
+    
     req.write(text_to_count)
     
 # Receiving Data
 After writing request.txt, watch for response.txt to be created or updated, then read the contents to get the word count:
 
 Python example
+
+
 import os, time
 
 while not os.path.exists("response.txt"):
+
+
     time.sleep(0.1)
 
 with open("response.txt", "r", encoding="utf-8") as res:
+
+
     count = int(res.read().strip())
+
+
 print("Word count =", count)
 
 
