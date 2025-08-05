@@ -11,7 +11,7 @@ Writes the result as a decimal integer into response.txt
 
 Your code must create or overwrite request.txt in the same directory where the service is running. The file’s contents should be exactly the text to be counted (UTF‑8 encoded), for example:
 
-# Python example
+Python example
 text_to_count = "Whatever words you choose to type.."
 with open("request.txt", "w", encoding="utf-8") as req:
     req.write(text_to_count)
@@ -19,7 +19,7 @@ with open("request.txt", "w", encoding="utf-8") as req:
 # Receiving Data
 After writing request.txt, watch for response.txt to be created or updated, then read the contents to get the word count:
 
-# Python example
+Python example
 import os, time
 
 while not os.path.exists("response.txt"):
